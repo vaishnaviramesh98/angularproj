@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "oneConversionn"
+  "defaultProject": "oneConversionn",
+  "cli": {
+    "analytics": false
+  }
 }
