@@ -1,82 +1,25 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<!-- <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul> -->
 <h1 class="bg-primary">Welcome to  {{title}}</h1>
 
-<!-- <app-tasks></app-tasks>
-<h4>List of completed tasks</h4>
-<button (click)="readMe()"> Click Me</button>
-<div *ngIf="showMsg" [ngStyle]='{color:"red"}'>Showing this message from If true statement</div>
-<h5>If statement</h5>
-<div *ngIf="showMsgg">Show message</div>
-<h5>If else statement</h5>
-<div *ngIf="showValue;else showMessage">Show value</div>
-<ng-template #showMessage>Show else message</ng-template>
-<h5>if with then and else staement</h5>
-<div *ngIf="showValue;then showThen ;else showMessage">Show value</div>
-<ng-template #showThen>then message</ng-template>
-<ng-template #showMessage>Show else message</ng-template>
-
-<h5>Switch example</h5>
-<div [ngSwitch]="switchValue">
-    <div *ngSwitchCase="1">Value passed is 1</div>
-    <div *ngSwitchCase="2">Value passed is 2</div>
-    <div *ngSwitchCase="3">Value passed is 3</div>
-    <div *ngSwitchCase="4">Value passed is 4</div>
-    <div *ngSwitchDefault>This is the default value</div>
-</div> -->
-<!-- <div [ngStyle]="{'color':'red'}">ngstyle</div>
-<div [ngStyle]="{'color':colVal,'background-color':'grey'}">ngstyle</div>
-<div [ngClass]="'one'">ngClass</div>
-<div [ngClass]="[clsName, clsName2]">ngClass dynamic</div>
-<div [ngClass]="{'one':true,'two':false}">ngClass with expression</div>
-
-<div>{{ subTitle }}</div>
-<div>{{ numBer }}</div>
-<div>{{ use.id}} {{ use.name }}</div>
-<div [ngStyle]="{color:colorVal}">Property binding</div>
-<p [innerHTML]='subTitle'></p>
-<div [ngClass]="'one'">Settting class property via property binding</div>
-<input [placeholder]="placeholderVal">
-<a [href]="hrefVal" [attr.updateLink]='updateVal'>Google</a>
-<h4>Event Binding</h4>
-<button (click)="showAlert();">Click Me</button>
-<h4>Two Way Data Binding</h4>
-<input [(ngModel)]='dataBind' />
-<div>{{ dataBind }}</div>
- <button (click)="readFirstName();">Read Firstname</button>
- <h4>pipes</h4>
- <div>{{ user.name | lowercase }}</div>
- <div>{{ user.name | uppercase }}</div>
- <div>{{ user.dob | date:'short' }}</div>
- <div>{{ user.userId | currency }}</div>
- <div>{{ user.dob | date }}</div> -->
- <code>
-     {{ user | json}}
- </code>
- <h4>Chaining pipes</h4>
- <div>{{ user.dob | date }}</div>
- <h4>Custom pipes</h4>
- <div>{{ user.city }}</div>
- <div> {{ user.city | highlight: user.city }} </div>
-
-
-
-<!-- <app-completed-tasks></app-completed-tasks> -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
+<!-- <ul>
+    <li> <a href="/products">Products</a> </li>
+    <li> <a href="/product-view">Product view</a> </li>
+    <li> <a href="/product-edit">Product edit</a> </li>
+    <li> <a href="/product-delete">Product delete</a> </li>
+</ul> -->
 
 <router-outlet></router-outlet>

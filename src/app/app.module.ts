@@ -10,6 +10,20 @@ import { HoverEffectPipe } from './hover-effect.pipe';
 import { TasksComponent } from './tasks/tasks.component';
 
 import { FormsModule } from '@angular/forms';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { ProductsComponent } from './products/products.component';
+import { ProductViewComponent } from './product-view/product-view.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
+import { ProductDeleteComponent } from './product-delete/product-delete.component';
+import { ProductIdComponent } from './product-id/product-id.component';
+import { OrderViewComponent } from './order-view/order-view.component';
+import { SearchComponent } from './search/search.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductChildComponent } from './product-child/product-child.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { SigninComponent } from './signin/signin.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,16 +32,31 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     HighlightPipe,
     HoverEffectPipe,
-    TasksComponent, 
+    TasksComponent,
+    ProductsComponent,
+    ProductViewComponent,
+    ProductEditComponent,
+    ProductDeleteComponent,
+    ProductIdComponent,
+    OrderViewComponent,
+    SearchComponent,
+    PageNotFoundComponent,
+    ProductChildComponent,
+    AdminHomeComponent,
+    SigninComponent,
+    CheckoutComponent, 
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TodoModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    // (provide: LocationStrategy, useClass: HashLocationStrategy)=>any
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
